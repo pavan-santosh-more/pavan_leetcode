@@ -19,8 +19,8 @@ class Solution {
 
     while(temp!=null && temp.next!=null){
         if(temp.val<temp.next.val){
-            dummy.next=temp;
-            dummy=temp;
+            dummy.next=temp.next;
+            dummy=temp.next;
 
         }  
         temp=temp.next; 
